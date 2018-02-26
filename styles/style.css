@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.main {
+  background-image: url("../images/bw.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 700px;
+  display: flex;
+  border: .6rem solid red;
+  padding: .5rem;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    align-items: flex-start;
+  }
+  .words {
+    margin: 0.5rem;
+  }
+  .about {
+    flex-direction: column;
+  }
+}
+
+.headliner h1, .headliner h2 {
+  color: yellow;
+  font-weight: bold;
+  font-family: 'Press Start 2P', monospace;
+  text-shadow: 2px 2px orange;
+  line-height: 1.2;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.links a, .about {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: .5rem 0;
+  color: #ff0080;
+}
+
+ul {
+  list-style: none;
+  padding-left: .5rem;
+}
+
+.links li {
+  list-style: none;
+  padding: .5rem 0;
+}
+
+.hide, .about {
+  display: none;
+  width: 100%;
+  background: linear-gradient(
+                     rgba(20,20,20, .5),
+                     rgba(20,20,20, .5));
+}
+
+.about {
+  padding-left: 0.5rem;
+  width: 100%;
+}
